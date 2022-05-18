@@ -1,0 +1,243 @@
+@import  "/style/variable.scss";
+
+.body{  
+        position: relative;
+        background-color: $main-color; 
+        padding: 1rem 1.1rem;
+}
+
+
+.header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: baseline;
+        p{
+                padding-left: 15px;
+                color: $text-color;
+                font-family: 'Open Sans', sans-serif;  
+                font-weight: bold; 
+        }
+        img {
+                width: 25px;
+                height: 25px;
+        }  
+}
+
+
+.main-div{
+       width: 100%;
+       margin: 130px auto;
+       display: flex;
+       justify-content: space-evenly;
+       flex-direction: column;
+}
+
+.image {
+        margin: auto;
+        padding: auto;
+        width: 80%;
+        border: 5px red;
+        border-radius: 10px;
+        box-shadow: rgb(38, 57, 77) 0px 10px 30px -5px;
+}
+
+
+.music-main {
+        width: 100%;
+        height: 10rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:baseline;
+        img {
+                width: 25px;
+                height: 25px;
+        }
+}
+
+
+.music-name {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: $text-color;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+}
+
+
+.more-details,
+.music-controller  {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+}
+
+.more-details img:active{
+
+}
+.progress-area {
+        height: 5px;
+        width: 100%;
+        background-color: white;
+        border-radius: 5rem;
+        cursor:pointer
+}
+
+.progress-area .progress-bar{
+        height: 5px;
+        width: 50%;
+        border-radius: inherit;
+        background: blue;
+} 
+
+.progress-bar::before {
+        content: "";
+        display: flex;
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        background-color: black;
+        border-radius: inherit;
+        top: 50%;
+        right: -5px;
+        transform: translateY(-50%);
+        background: inherit;
+        opacity: ۱;
+        transition:  opacity 0.2s ease;
+}
+
+
+
+
+.music-list{
+        position: absolute;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
+        background: $main-color;
+        box-shadow: rgb(93, 96, 99)     0px 2px 25px -5px;
+
+}
+
+.music-list-header {
+        width: 95%;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between ;
+        
+        img {
+                width: 25px;
+                height: 25px; 
+        }
+
+        p {
+                margin: auto;
+                color: $text-color;
+                font-family: 'Open Sans', sans-serif;        
+        }
+}
+
+.music-list-header-icon-name{
+        width: 27%;
+        display: flex;
+        flex-direction: row;
+
+        img{
+                width: 25px;
+                height: 25px;  
+        }
+
+        p{
+                margin: auto;
+                color: $text-color;
+                font-family: 'Open Sans', sans-serif;   
+        }
+
+}
+
+
+.music-list-item {
+        width: 100%;
+        display: flex;
+
+        ul{     
+                position: relative;
+                width: 100%;
+                margin: 10px 0px;
+                padding: auto;
+                max-height: 260px;
+                overflow: auto;
+                
+                li{     
+                        width: 95%;
+                        list-style: none;
+                        display: flex;
+                        padding: 0.5rem;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        cursor: pointer;
+                        margin-bottom: 5px;
+                        color: $text-color;
+                        border-bottom: 1px solid $border-color;
+                        margin: auto;
+                        color: $text-color;
+                        font-family: 'Open Sans', sans-serif;   
+                        
+                        .music-list-name{
+                                width: 100;
+                        
+                        }
+                        span{
+                                font-size: 1rem;
+                                font-weight: bold;
+                        }
+
+                        p{
+                                opacity: 0.9;
+                        }
+
+
+                        .music-time {
+                                font-size: 1rem;
+                        }
+
+                        .playing{
+                                pointer-events: none;
+                                color: var(--violet);
+                              }
+                      }
+
+                li:last-child{
+                        border-bottom: 0px;
+                }
+
+        }
+
+
+}
+
+.progress-bar{
+        display: flex;
+        height: 1rem;
+        position: relative;
+        border-radius: 5rem;
+      }
+
+
+.progress-timer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}

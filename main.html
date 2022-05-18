@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/musical-note.png">
+    <link rel="stylesheet" href="/style/main.css">
+    <script src="/script/main.js" defer ></script>
+    <title>Zoozanaghe</title>
+</head>
+<body class="body" onload="onload()" >
+    <div class="header">
+        <img src="/images/expand.png" alt="expand.png">
+        <p id="title" >Music player</p>
+        <div class="more-detail">
+            <img src="/images/equalizer.png" alt="equalizer.png">
+            <img src="/images/setting.png" alt="setting.png">
+        </div>
+    </div>
+    <div class="main-div" >
+        <img src="" id="music-photo" class="image" alt="mian photo">
+    </div>
+    <div class="music-name">
+        <p id="music-name-text">
+            <!-- comes from server -->
+        </p>
+    </div>
+    <div class="music-main">
+        <div class="more-details">
+           <img src="/images/music list.png" id="music-list-icon" alt="">
+           <img src="/images/unfavorite.png" id="favorite" alt="">
+           <img src="/images/add.png"  id="add" alt="">
+        </div>
+        <div class="progress-area" , id = "progress-area">
+            <div class="progress-bar" , id="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="progress-timer">
+                <span id="current-time"></span>
+                <span id="end-time"> </span>
+            </div>
+        </div>
+        <div class="music-controller">
+            <img src="/images/shuffle.png" id="shuffle" alt="list mode" >
+            <img src="/images/previous.png" id="previous" alt="">
+            <img src="/images/play.png"  id="pause-play"  alt="">
+            <img src="/images/skip.png" id="next" alt="">
+            <img src="/images/repeat.png" id="repeat" alt="">
+        </div>
+          <div class="music-list"  id="music-list-id">
+              <div class="music-list-header">
+                 <div class="music-list-header-icon-name">
+                    <img src="/images/music list.png" alt="">
+                    <p>music list</p>
+                 </div>
+                  <img src="/images/close.png" id="music-list-close-icon" alt="">
+              </div>
+            <div class="music-list-item">
+                <ul id="ul">
+                    <!-- comes from server -->
+                </ul>
+            </div>
+</body>
+</html>
+
